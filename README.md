@@ -3,14 +3,17 @@ git clone https://github.com/chobi1125/vuesplash.git
 
 cd vuesplash
 
-docker-compose up -d
+docker-compose up -d // Docker起動
 
-docker-compose exec vuesplash_web bash
+docker-compose exec vuesplash_web bash // 仮想環境へ
 
 composer install // venderが生成
 
+cp .env.example .env // envの作成
 
-参考になりそう
+php artisan key:generate // キーの生成
+
+## 参考になりそう
 
 Laravel5のプロジェクトをGitで管理する
 
