@@ -13,6 +13,10 @@ cp .env.example .env // envの作成
 
 php artisan key:generate // キーの生成
 
+php artisan serve --host 0.0.0.0 --port 8081 // サーバの起動
+
+http://localhost:8081/ // アクセス
+
 ## 参考になりそう
 
 Laravel5のプロジェクトをGitで管理する
